@@ -23,7 +23,7 @@ class DirectoryProcessor:
         logger.info("Processing files in {}.".format(input_dir))
         input_file_names = os.listdir(input_dir)
         for input_file_name in input_file_names:
-            logger.info("Processing {}.".format(input_file_name))
+            # logger.info("Processing {}.".format(input_file_name))
             input_file = os.path.join(input_dir, input_file_name)
             with codecs.open(input_file, "r", encoding="UTF-8") as f:
                 input_string = f.read()
